@@ -7,7 +7,7 @@ public class ShopManagerScript : MonoBehaviour
 {
     public int[,] shopItens = new int[5, 5];
     public Text XpAvaibleText;
-    private void FixedUpdate()
+    private void Update()
     {
         XpAvaibleText.text = "XP Avaible: " + GameController.gameController.xpTotal.ToString();
         // ID's

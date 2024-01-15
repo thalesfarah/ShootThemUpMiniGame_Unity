@@ -8,7 +8,7 @@ public class ButtonInfo : MonoBehaviour
     public Text priceText, quantityText;
     public GameObject shopManager;
 
-    private void FixedUpdate()
+    private void Update()
     {
         priceText.text = shopManager.GetComponent<ShopManagerScript>().shopItens[2, itemID].ToString();
         quantityText.text = shopManager.GetComponent<ShopManagerScript>().shopItens[3, itemID].ToString();
